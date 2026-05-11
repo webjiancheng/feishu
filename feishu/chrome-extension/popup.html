@@ -1,0 +1,62 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8">
+    <title>商品同步助手</title>
+    <link rel="stylesheet" href="popup.css">
+  </head>
+  <body>
+    <main>
+      <header>
+        <h1>商品同步助手</h1>
+        <span id="status" class="status">待同步</span>
+      </header>
+
+      <button id="sync" class="primary">采集并同步到飞书</button>
+
+      <section class="summary">
+        <div>
+          <span>平台</span>
+          <strong id="platform">-</strong>
+        </div>
+        <div>
+          <span>价格</span>
+          <strong id="price">-</strong>
+        </div>
+        <div>
+          <span>图片</span>
+          <strong id="imageCount">-</strong>
+        </div>
+        <div>
+          <span>SKU</span>
+          <strong id="skuCount">-</strong>
+        </div>
+      </section>
+
+      <section class="controls">
+        <label for="skuLimit">采集 SKU 数量</label>
+        <div class="sku-control">
+          <input id="skuLimit" type="number" min="1" step="1" placeholder="全部">
+          <button id="allSku" type="button" class="secondary">全部</button>
+        </div>
+        <div class="sku-actions">
+          <button id="selectAllSku" type="button" class="secondary">全选</button>
+          <button id="clearSku" type="button" class="secondary">清空</button>
+        </div>
+        <div id="skuList" class="sku-list">
+          <span class="empty">打开商品页后显示可采集 SKU</span>
+        </div>
+      </section>
+
+      <section class="preview">
+        <label>商品标题</label>
+        <textarea id="title" rows="3" readonly></textarea>
+        <label>货源链接</label>
+        <input id="url" readonly>
+      </section>
+
+      <p id="message" class="message">先启动本地服务：npm run sync-server</p>
+    </main>
+    <script src="popup.js"></script>
+  </body>
+</html>

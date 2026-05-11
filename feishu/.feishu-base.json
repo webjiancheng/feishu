@@ -1,0 +1,17 @@
+{
+  "name": "Temu 高效采集到上架流程",
+  "baseToken": "IsUDbg8e7auPNgsI9n8cFcv5nFh",
+  "url": "https://e17sak0ms6v.feishu.cn/base/IsUDbg8e7auPNgsI9n8cFcv5nFh",
+  "tables": {
+    "原始数据暂存": "tblHr5sBkQiv1L6C",
+    "标题处理表": "tblUi1QN03nEffDS",
+    "轮播图处理表": "tblhwvzN4sl6rK6K",
+    "预览图处理表": "tblw6EPsS13cSFHw",
+    "利润配置表": "tblgKBQsziPSPiqz",
+    "主表：导出模版聚合": "tble4kKtc6N6mcui",
+    "AI识图分析表": "tblHf5Pps5VMOlOa",
+    "AI提示词库": "tblj3sxjjz7C5qyN"
+  },
+  "createdAt": "2026-05-09T12:31:12+08:00",
+  "updatedAt": "2026-05-09T07:56:58.106Z"
+}

@@ -1,0 +1,180 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  width: 340px;
+  margin: 0;
+  font: 14px/1.4 -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  color: #1f2329;
+  background: #f6f7f9;
+}
+
+main {
+  padding: 14px;
+}
+
+header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 12px;
+}
+
+h1 {
+  margin: 0;
+  font-size: 16px;
+  font-weight: 700;
+}
+
+.status {
+  padding: 3px 8px;
+  border-radius: 999px;
+  background: #e8edf7;
+  color: #2454b5;
+  font-size: 12px;
+}
+
+button {
+  width: 100%;
+  height: 42px;
+  border: 1px solid #1664ff;
+  border-radius: 6px;
+  background: #1664ff;
+  color: #fff;
+  cursor: pointer;
+}
+
+.summary {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 8px;
+  margin-top: 12px;
+}
+
+.summary div {
+  min-width: 0;
+  padding: 8px;
+  border: 1px solid #d9dde5;
+  border-radius: 6px;
+  background: #fff;
+}
+
+.summary span {
+  display: block;
+  color: #646a73;
+  font-size: 12px;
+}
+
+.summary strong {
+  display: block;
+  overflow: hidden;
+  margin-top: 2px;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  font-size: 13px;
+}
+
+.controls {
+  display: grid;
+  gap: 6px;
+  margin-top: 12px;
+}
+
+.sku-control {
+  display: grid;
+  grid-template-columns: 1fr 68px;
+  gap: 8px;
+}
+
+.sku-actions {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 8px;
+}
+
+.secondary {
+  height: 36px;
+  border-color: #d9dde5;
+  background: #fff;
+  color: #1f2329;
+}
+
+.sku-list {
+  display: grid;
+  gap: 6px;
+  max-height: 168px;
+  overflow: auto;
+  padding: 8px;
+  border: 1px solid #d9dde5;
+  border-radius: 6px;
+  background: #fff;
+}
+
+.sku-item {
+  display: grid;
+  grid-template-columns: 16px 34px 1fr;
+  gap: 8px;
+  align-items: center;
+  min-height: 34px;
+  margin: 0;
+  color: #1f2329;
+}
+
+.sku-item input {
+  width: 16px;
+  height: 16px;
+  padding: 0;
+}
+
+.sku-thumb {
+  width: 34px;
+  height: 34px;
+  border: 1px solid #eff1f5;
+  border-radius: 4px;
+  object-fit: cover;
+  background: #f6f7f9;
+}
+
+.sku-name {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  font-size: 12px;
+}
+
+.empty {
+  color: #8f959e;
+  font-size: 12px;
+}
+
+.preview {
+  display: grid;
+  gap: 6px;
+  margin-top: 12px;
+}
+
+label {
+  margin-top: 6px;
+  color: #646a73;
+  font-size: 12px;
+}
+
+input,
+textarea {
+  width: 100%;
+  border: 1px solid #d9dde5;
+  border-radius: 6px;
+  padding: 8px;
+  color: #1f2329;
+  background: #fff;
+  resize: none;
+}
+
+.message {
+  min-height: 18px;
+  margin: 10px 0 0;
+  color: #646a73;
+  font-size: 12px;
+  word-break: break-word;
+}

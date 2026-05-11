@@ -1,0 +1,62 @@
+{
+  "manifest_version": 3,
+  "name": "商品同步助手",
+  "version": "0.1.0",
+  "description": "采集 1688、拼多多、淘宝、Temu、SHEIN、Amazon 等商品页数据，并同步到飞书多维表格。",
+  "permissions": ["activeTab", "scripting", "downloads"],
+  "host_permissions": [
+    "<all_urls>",
+    "http://127.0.0.1:17321/*",
+    "https://*.1688.com/*",
+    "https://*.taobao.com/*",
+    "https://*.tmall.com/*",
+    "https://*.yangkeduo.com/*",
+    "https://*.pinduoduo.com/*",
+    "https://*.temu.com/*",
+    "https://*.shein.com/*",
+    "https://*.amazon.com/*",
+    "https://*.amazon.co.uk/*",
+    "https://*.amazon.de/*",
+    "https://*.amazon.co.jp/*",
+    "https://*.amazon.fr/*",
+    "https://*.amazon.it/*",
+    "https://*.amazon.es/*",
+    "https://*.amazon.ca/*",
+    "https://*.amazon.com.mx/*",
+    "https://*.amazon.com.au/*",
+    "https://*.amazon.in/*"
+  ],
+  "action": {
+    "default_title": "商品同步助手",
+    "default_popup": "popup.html"
+  },
+  "background": {
+    "service_worker": "background.js"
+  },
+  "content_scripts": [
+    {
+      "matches": [
+        "https://*.1688.com/*",
+        "https://*.taobao.com/*",
+        "https://*.tmall.com/*",
+        "https://*.yangkeduo.com/*",
+        "https://*.pinduoduo.com/*",
+        "https://*.temu.com/*",
+        "https://*.shein.com/*",
+        "https://*.amazon.com/*",
+        "https://*.amazon.co.uk/*",
+        "https://*.amazon.de/*",
+        "https://*.amazon.co.jp/*",
+        "https://*.amazon.fr/*",
+        "https://*.amazon.it/*",
+        "https://*.amazon.es/*",
+        "https://*.amazon.ca/*",
+        "https://*.amazon.com.mx/*",
+        "https://*.amazon.com.au/*",
+        "https://*.amazon.in/*"
+      ],
+      "js": ["content.js"],
+      "run_at": "document_idle"
+    }
+  ]
+}

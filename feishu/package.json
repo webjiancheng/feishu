@@ -1,0 +1,22 @@
+{
+  "name": "temu-feishu-listing-flow",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "schema": "node src/cli.mjs schema",
+    "prompts": "node src/cli.mjs prompts",
+    "create-base": "node src/cli.mjs create-base",
+    "setup-flow": "node src/setup-flow.mjs",
+    "import-products": "node src/cli.mjs import-products",
+    "export-template": "node src/cli.mjs export-template",
+    "export-collected": "node src/cli.mjs export-collected",
+    "sync-server": "node src/sync-server.mjs"
+  },
+  "dependencies": {
+    "xlsx": "^0.18.5"
+  },
+  "engines": {
+    "node": ">=20"
+  }
+}
